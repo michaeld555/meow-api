@@ -8,12 +8,16 @@ namespace App\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
 /**
  * Class User
- * 
+ *
  * @property int $id
  * @property string|null $name
  * @property string $email
@@ -23,16 +27,17 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $deleted_at
- * 
+ *
  * @property Collection|Metric[] $metrics
  * @property Collection|Mylist[] $mylists
  * @property Collection|Star[] $stars
  *
  * @package App\Models
  */
-class User extends Model
+class User extends Authenticatable
 {
-	use SoftDeletes;
+	use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
+
 	protected $table = 'users';
 
 	protected $hidden = [
