@@ -24,7 +24,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'name' => 'Vice Versa',
-                'description' => NULL,
+                'description' => 'Talay acorda no corpo de um homem chamado Tess e reencontra Puen, um ator famoso que agora está no corpo de Tun após um acidente. Os dois têm Phuwadol, uma enfermeira que ajuda pessoas do mesmo universo que deixaram para trás, para guiá-las pela vida neste novo universo. De acordo com Phuwadol, há uma chance de que eles possam ser a “chave do portal” um do outro, pessoas que podem ajudá-los a retornar de onde vieram depois de concluir o que precisam conquistar.',
                 'creation_year' => 2022,
                 'type_title' => 1,
                 'url_image' => 'https://i.pinimg.com/564x/7a/12/c2/7a12c232a7073f751af46bc1f2f3132b.jpg',
@@ -38,7 +38,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 2,
                 'name' => 'Fish Upon the Sky',
-                'description' => NULL,
+                'description' => 'Pi tem uma quedinha por um dos estudantes mais gatos do Departamento de Ciências da Saúde Aliado, mas como ele não é confiante o suficiente sobre sua aparência, ele está desamparado. Pelo menos até que Duen e seus amigos o ajudem a conseguir uma mudança de visual para aumentar sua confiança. Quando Pi finalmente tem coragem de se aproximar de seu crush, ele encontra seu rival amoroso, Mork.',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://pictures.betaseries.com/fonds/poster/a48d15f101af2b15d2e9b56c192b035b.jpg',
@@ -52,7 +52,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 3,
                 'name' => 'I Told Sunset About You',
-                'description' => NULL,
+                'description' => 'A história de dois garotos do ensino médio que estavam entendendo seu profundo relacionamento através de sentimentos complicados e instáveis, como uma tempestade que afasta o barco de seu caminho. Era contrário à pacífica Phuket onde eles moravam.',
                 'creation_year' => 2020,
                 'type_title' => 1,
                 'url_image' => 'https://1.bp.blogspot.com/-4-8SzMKI9AI/X7xeMiaKysI/AAAAAAAAEE4/67M81i3HWBgh3C5Mvn14wZ0loIxLIZ-0wCLcBGAsYHQ/s1187/D93Mtrk.png',
@@ -66,7 +66,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 4,
                 'name' => 'I Promissed You the Moon',
-                'description' => NULL,
+                'description' => 'Na Parte Dois, Teh e Oh-aew levam seu relacionamento a um novo nível em Bangkok. Eles podem manter a promessa de que seu coração permanecerá o mesmo, inalterado?',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://pbs.twimg.com/media/EzT9KJ4VkAAjYOL?format=jpg&name=900x900',
@@ -80,7 +80,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 5,
                 'name' => 'A Tale of Thousand Stars',
-                'description' => NULL,
+                'description' => 'Uma professora voluntária morre em um trágico acidente, e seu coração é transplantado para Tian. Através de uma série de anotações no diário da garota, Tian aprende sobre sua vida, seus segredos e interesses, incluindo sua promessa ao oficial Phupha, sobre contar mil estrelas. Tian decide então seguir seus passos e completar seu sonho.',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://1.bp.blogspot.com/-LqxBa4BsBbI/YKewT1RIdQI/AAAAAAAADU8/YCVb0torC8k6gVowLOFCm7rMiAawdm3-ACLcBGAsYHQ/w518-h640/a%2Btale%2Bof%2B1000%2Bstarts%2Bdrama%2Btailand%25C3%25AAs%2Blegendado.jpg',
@@ -94,7 +94,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 6,
                 'name' => 'Until We Meet Again',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2019,
                 'type_title' => 1,
                 'url_image' => 'https://i.mydramalist.com/WBDBPf.jpg',
@@ -108,7 +108,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 7,
                 'name' => 'Bad Buddy',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://i.mydramalist.com/kZdb8_4f.jpg',
@@ -122,7 +122,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 8,
                 'name' => 'Not Me',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://sucodemanga.com.br/wp-content/uploads/2022/03/not-me-review-poster.jpg',
@@ -136,7 +136,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 9,
                 'name' => 'We Best Love: No. 1 For You',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://i.mydramalist.com/q1bOQ_4f.jpg',
@@ -150,7 +150,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 10,
                 'name' => 'Cherry Magic',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://img1.ak.crunchyroll.com/i/spire1/c3e01442adc93b8a5bcd83bbd70653a31606984799_main.jpg',
@@ -164,7 +164,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 11,
                 'name' => 'We Best Love: Fighting Mr. 2nd',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://i.mydramalist.com/ByAD6_4f.jpg',
@@ -178,7 +178,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 12,
                 'name' => 'Light On Me',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://media.fstatic.com/46cic6UoozO60cRwemMF0zx5FwE=/290x478/smart/media/movies/covers/2021/06/E34mQyxXoAEnPRI.jpg',
@@ -192,7 +192,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 13,
                 'name' => 'Manner of Death',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2020,
                 'type_title' => 1,
                 'url_image' => 'https://pictures.betaseries.com/fonds/poster/1833da2d419a49e7c92ba55b0636e3d1.jpg',
@@ -206,7 +206,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 14,
                 'name' => 'Blueming',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2022,
                 'type_title' => 1,
                 'url_image' => 'https://i.mydramalist.com/XDBgO_4f.jpg',
@@ -220,7 +220,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 15,
                 'name' => 'Cutie Pie',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2022,
                 'type_title' => 1,
                 'url_image' => 'https://pictures.betaseries.com/fonds/poster/6a1f51b139ba68a215fd0246c60d3709.jpg',
@@ -234,7 +234,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 16,
                 'name' => 'To My Star',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://pbs.twimg.com/media/FAholm3WUAIRjUm.png',
@@ -248,7 +248,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 17,
                 'name' => '2Gether',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2020,
                 'type_title' => 1,
                 'url_image' => 'https://www.themoviedb.org/t/p/original/5rlyWqNn71A8n1mj8l2D8Yic19J.jpg',
@@ -262,7 +262,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 18,
                 'name' => 'Theory of Love',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2019,
                 'type_title' => 1,
                 'url_image' => 'http://bancodeseries.com.br/images/posters/15518.jpg',
@@ -276,7 +276,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 19,
                 'name' => 'History3: Trapped',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2019,
                 'type_title' => 1,
                 'url_image' => 'https://i.mydramalist.com/evZmqf.jpg',
@@ -290,7 +290,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 20,
                 'name' => 'Lovely Writer',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2021,
                 'type_title' => 1,
                 'url_image' => 'https://i.mydramalist.com/ZPz0L_4f.jpg',
@@ -304,7 +304,7 @@ class TitlesTableSeeder extends Seeder
             array (
                 'id' => 21,
                 'name' => 'Together With Me',
-                'description' => NULL,
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis iaculis mi, eget commodo eros ultrices quis. Nunc malesuada lobortis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta nec mi sagittis vulputate. Mauris est elit, efficitur sit amet tristique at, dignissim eget quam.',
                 'creation_year' => 2019,
                 'type_title' => 1,
                 'url_image' => 'https://pictures.betaseries.com/fonds/poster/8f00b01bc9e1ea54e60083f4611afb43.jpg',
