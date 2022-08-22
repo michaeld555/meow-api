@@ -2,40 +2,40 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\BaseController;
 use App\Http\Controllers\Controller;
+use App\Models\Title;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
-class TitleController extends Controller
+class TitleController extends BaseController
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Request
      */
-    public function index()
+    public function singleTitle($id = null)
     {
-        //
+        if(empty($id))
+            return $this->sendError("Necessario informar um id",404);
+        $title = Title::where('id', $id)->with('episodes')->get();
+        return response()->json($title);
     }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Request
      */
-    public function create()
+    public function searchTitles($name = null)
     {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+        if(empty($name))
+            return $this->sendError("Necessario informar um titulo",404);
+        $titles = Title::where('name', 'like', '%'.$name.'%')->limit(20)->get();
+        return response()->json($titles);
     }
 
     /**
@@ -56,18 +56,6 @@ class TitleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
     {
         //
     }

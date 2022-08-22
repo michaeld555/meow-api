@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\Auth\LoginController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\Auth\RegisterController;
+use App\Http\Controllers\Api\TitleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,9 @@ use App\Http\Controllers\Api\Auth\RegisterController;
 */
 
 Route::middleware('auth:sanctum')->group(function () {
-    //Route::get('user/{id}', [UserController::class, 'show']);
-    //Route::put('user/{id}', [UserController::class, 'update']);
-    //Route::delete('user/{id}', [UserController::class, 'destroy']);
+    //Route::get('title/{id}', [TitleController::class, 'show']);
+    Route::get('title/{id?}', [TitleController::class, 'singleTitle']);
+    Route::get('search/{name?}', [TitleController::class, 'searchTitles']);
     //Route::get('foods/{company}', [FoodController::class, 'getFoodsByCompany']);
 });
 
