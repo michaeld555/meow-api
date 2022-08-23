@@ -6,6 +6,7 @@ use App\Http\Controllers\BaseController;
 use App\Http\Controllers\Controller;
 use App\Models\Title;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
 class TitleController extends BaseController
@@ -21,6 +22,9 @@ class TitleController extends BaseController
         if(empty($id))
             return $this->sendError("Necessario informar um id",404);
         $title = Title::where('id', $id)->with('episodes')->get();
+        //$metric = new MetricController;
+        //$user = Auth::user();
+        //$metric->createMetric(1, $user->id, $title->id);
         return response()->json($title);
     }
 

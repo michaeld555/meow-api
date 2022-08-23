@@ -16,5 +16,8 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
         $this->call(TypeTitleTableSeeder::class);
         $this->call(TitlesTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
+        $this->call(MylistTableSeeder::class);
+        $this->call(TypeMetricTableSeeder::class);
     }
 }

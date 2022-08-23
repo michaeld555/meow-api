@@ -13,7 +13,7 @@ class MetricController extends Controller
      * Cria uma nova metrica para um determinado titulo
      */
 
-    public function createMetric($action, $user, $title, $episode){
+    public function createMetric($action, $user, $title, $episode = null){
         DB::table('metrics')->insert([
             'type_action' => $action,
             'user_id' => $user,
