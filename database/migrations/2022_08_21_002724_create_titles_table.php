@@ -18,7 +18,7 @@ class CreateTitlesTable extends Migration {
 			$table->integer('id', true);
 			$table->string('name', 300)->nullable();
 			$table->string('description', 1000)->nullable();
-			$table->year('creation_year')->nullable();
+			$table->string('creation_year', 100)->nullable();
 			$table->integer('type_title')->nullable()->index('fk_titles_type');
 			$table->string('url_image', 500)->nullable();
 			$table->string('url_image2', 500)->nullable();

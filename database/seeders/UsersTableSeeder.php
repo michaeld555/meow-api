@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class UsersTableSeeder extends Seeder
 {
@@ -14,12 +15,12 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        
 
-        \DB::table('users')->delete();
-        
-        \DB::table('users')->insert(array (
-            0 => 
+
+        DB::table('users')->delete();
+
+        DB::table('users')->insert(array (
+            0 =>
             array (
                 'id' => 1,
                 'name' => NULL,
@@ -32,7 +33,7 @@ class UsersTableSeeder extends Seeder
                 'deleted_at' => NULL,
             ),
         ));
-        
-        
+
+
     }
 }

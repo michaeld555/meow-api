@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class TypeMetricTableSeeder extends Seeder
 {
@@ -14,12 +15,12 @@ class TypeMetricTableSeeder extends Seeder
      */
     public function run()
     {
-        
 
-        \DB::table('type_metric')->delete();
-        
-        \DB::table('type_metric')->insert(array (
-            0 => 
+
+        DB::table('type_metric')->delete();
+
+        DB::table('type_metric')->insert(array (
+            0 =>
             array (
                 'id' => 1,
                 'action' => 'criou',
@@ -27,7 +28,7 @@ class TypeMetricTableSeeder extends Seeder
                 'updated_at' => NULL,
                 'deleted_at' => NULL,
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'action' => 'clicou',
@@ -35,7 +36,7 @@ class TypeMetricTableSeeder extends Seeder
                 'updated_at' => NULL,
                 'deleted_at' => NULL,
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'action' => 'assistiu',
@@ -43,7 +44,7 @@ class TypeMetricTableSeeder extends Seeder
                 'updated_at' => NULL,
                 'deleted_at' => NULL,
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'action' => 'favoritou',
@@ -51,7 +52,7 @@ class TypeMetricTableSeeder extends Seeder
                 'updated_at' => NULL,
                 'deleted_at' => NULL,
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'action' => 'removeu',
@@ -59,7 +60,7 @@ class TypeMetricTableSeeder extends Seeder
                 'updated_at' => NULL,
                 'deleted_at' => NULL,
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'action' => 'amou',
@@ -68,7 +69,7 @@ class TypeMetricTableSeeder extends Seeder
                 'deleted_at' => NULL,
             ),
         ));
-        
-        
+
+
     }
 }

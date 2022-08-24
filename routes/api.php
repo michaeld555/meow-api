@@ -18,9 +18,10 @@ use App\Http\Controllers\Api\TitleController;
 */
 
 Route::middleware('auth:sanctum')->group(function () {
-    //Route::get('title/{id}', [TitleController::class, 'show']);
+    Route::get('title', [TitleController::class, 'titles']);
     Route::get('title/{id?}', [TitleController::class, 'singleTitle']);
     Route::get('search/{name?}', [TitleController::class, 'searchTitles']);
+    Route::get('mylist/{id}', [TitleController::class, 'myList']);
     //Route::get('foods/{company}', [FoodController::class, 'getFoodsByCompany']);
 });
 

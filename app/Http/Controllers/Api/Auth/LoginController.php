@@ -42,7 +42,7 @@ class LoginController extends BaseController
         $token = $user->createToken('Personal Access Token');
 
         $data = $this->getData($user, $token);
-        return $this->sendResponse($data, 'Login efetuado com sucesso!');
+        return $this->sendResponse($data);
     }
 
 
