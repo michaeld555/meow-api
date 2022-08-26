@@ -115,8 +115,8 @@ class TitleController extends BaseController
 
             return $this->sendResponse($titles);
         }
-        else if($type == "more_watched_all"){
-            $more_watched_all = DB::table('metrics')
+        else if($type == "more_popular"){
+            $more_popular = DB::table('metrics')
                 ->select('title_id', DB::raw('count(*) as total'))
                 ->where('type_action', '!=', 5)
                 ->groupBy('title_id')
@@ -124,7 +124,7 @@ class TitleController extends BaseController
                 ->take(10)
                 ->get();
 
-                $array = json_decode(json_encode($more_watched_all), true);
+                $array = json_decode(json_encode($more_popular), true);
                 $titles = array();
                 foreach($array as $top){
                 $titles[] = Title::find($top["title_id"]);
