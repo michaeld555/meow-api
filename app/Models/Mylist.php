@@ -8,18 +8,18 @@ namespace App\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent;
 
 /**
  * Class Mylist
- * 
+ *
  * @property int $id
  * @property int|null $user_id
  * @property int|null $title_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $deleted_at
- * 
+ *
  * @property Title|null $title
  * @property User|null $user
  *
@@ -27,7 +27,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Mylist extends Model
 {
-	use SoftDeletes;
 	protected $table = 'mylist';
 
 	protected $casts = [
