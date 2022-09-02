@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\Auth\RegisterController;
 use App\Http\Controllers\Api\MyListController;
+use App\Http\Controllers\Api\StarController;
 use App\Http\Controllers\Api\TitleController;
 
 /*
@@ -24,6 +25,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('search/{name?}', [TitleController::class, 'searchTitles']);
     Route::get('mylist/{id}', [TitleController::class, 'myList']);
     Route::post('mylist', [MyListController::class, 'addRemoveIsMyList']);
+    Route::post('avaliation', [StarController::class, 'avaliation']);
     //Route::get('foods/{company}', [FoodController::class, 'getFoodsByCompany']);
 });
 
