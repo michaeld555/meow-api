@@ -56,7 +56,28 @@ class LoginController extends BaseController
      */
     public function loginSocial(Request $request)
     {
-        // Em implementacao
+        $user = User::where('email', '=', $request->email)->first();
+
+        if($user != null){
+
+            $token = $user->createToken('Personal Access Token');
+            $data = $this->getData($user, $token);
+
+            return $this->sendResponse($data);
+
+        } else {
+
+            $user = new User([
+                'name' => $request->name,
+                'email' => $request->email,
+                'google_id' => $request->google_id,
+            ]);
+            $user->save();
+            $token = $user->createToken('Personal Access Token');
+            $data = $this->getData($user, $token);
+
+            return $this->sendResponse($data);
+        }
     }
 
     /**
@@ -66,6 +87,7 @@ class LoginController extends BaseController
     public function getData($user, $token) {
         $data = new stdClass;
         $data->id = $user->id;
+        $data->name = $user->name;
         $data->email = $user->email;
         $data->token = $token->plainTextToken;
         return $data;

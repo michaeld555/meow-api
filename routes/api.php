@@ -33,6 +33,6 @@ Route::middleware('auth:sanctum')->group(function () {
 Route::prefix('auth')->group(function () {
     Route::post('login', [LoginController::class, 'login']);
     Route::post('register', [RegisterController::class, 'register']);
-    //Route::post('login/social', [LoginController::class, 'loginSocial']);
+    Route::post('login/social', [LoginController::class, 'loginSocial']);
 });
 
