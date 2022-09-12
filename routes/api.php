@@ -28,6 +28,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('mylist', [MyListController::class, 'addRemoveIsMyList']);
     Route::post('avaliation', [StarController::class, 'avaliation']);
     Route::get('user/{id}', [UserController::class, 'show']);
+    Route::post('user/{id}', [UserController::class, 'edit']);
     //Route::get('foods/{company}', [FoodController::class, 'getFoodsByCompany']);
 });
 
