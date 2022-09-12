@@ -82,7 +82,7 @@ class UserController extends BaseController
             return $this->sendError('Usuário não encontrado', 404);
         } */
          if ($request->hasFile('url_image')) {
-            dd($request->url_image);exit;
+            
             $file = $request->file('url_image');
             $name = time() . $file->hashName();
             $filePath = "users/$id/profile/$name";
