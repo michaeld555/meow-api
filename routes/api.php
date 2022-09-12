@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\Auth\RegisterController;
 use App\Http\Controllers\Api\MyListController;
 use App\Http\Controllers\Api\StarController;
 use App\Http\Controllers\Api\TitleController;
+use App\Http\Controllers\Api\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('mylist/{id}', [TitleController::class, 'myList']);
     Route::post('mylist', [MyListController::class, 'addRemoveIsMyList']);
     Route::post('avaliation', [StarController::class, 'avaliation']);
+    Route::get('user/{id}', [UserController::class, 'show']);
     //Route::get('foods/{company}', [FoodController::class, 'getFoodsByCompany']);
 });
 

@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration {
 			$table->string('password', 200)->nullable();
 			$table->string('twitter_id', 200)->nullable();
 			$table->string('google_id', 200)->nullable();
+            $table->string('photo_url', 2000)->nullable();
 			$table->timestamps();
 			$table->softDeletes();
 		});
