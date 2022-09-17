@@ -69,7 +69,7 @@ class UserController extends BaseController
     {
             try {
                 $user = User::findOrFail($id);
-                if($request->url_image == null){
+                if($request->url_image != null){
                     $name = time()."meowProfileImage$id.png";
                     $filePath = "users/$id/profile/$name";
                     $success = Storage::disk('s3')->put($filePath, file_get_contents("data:image/png;base64,$request->url_image"), 'public');
