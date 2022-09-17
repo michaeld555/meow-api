@@ -67,35 +67,14 @@ class UserController extends BaseController
      */
     public function edit(Request $request, $id)
     {
-        /* try{
-            $user = User::findOrFail($id);
-            $request->validate([
-                'name' => 'required|max:255',
-                'email' => 'required|email|unique:users,email,'.$user->id_user.',id_user'
-            ]);
-            $user->name = $request->name;
-            $user->email = $request->email;
-            $user->save();
-            $this->createRecentActivity("Editou seu cadastro", $user);
-            return $this->sendResponse('[]','Usuário alterado com sucesso');
-        } catch (ModelNotFoundException $e) {
-            return $this->sendError('Usuário não encontrado', 404);
-        } */
-         if ($request->hasFile('url_image')) {
-            
-            $file = $request->file('url_image');
-            $name = time() . $file->hashName();
+            $name = time()."meowId$id";
             $filePath = "users/$id/profile/$name";
 
-            $success = Storage::disk('s3')->put($filePath, file_get_contents($file), 'public');
+            $success = Storage::disk('s3')->put($filePath, file_get_contents("data:image/png;base64,$request->url_image"), 'public');
             if ($success) {
                 $url_image  = Storage::disk('s3')->url($filePath);
                 return $url_image;
             }
-        } else {
-            $url_image = '';
-            return $url_image;
-        }
     }
 
     /**
