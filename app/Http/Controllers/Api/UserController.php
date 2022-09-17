@@ -87,7 +87,7 @@ class UserController extends BaseController
             $name = "teste1234";//time() . $file->hashName();
             $filePath = "users/$id/profile/$name";
 
-            $success = Storage::disk('s3')->put($filePath, file_get_contents("$request->url_image"), 'public');
+            $success = Storage::disk('s3')->put($filePath, file_get_contents("data:image/png;base64,$request->url_image"), 'public');
             if ($success) {
                 $url_image  = Storage::disk('s3')->url($filePath);
                 return $url_image;
