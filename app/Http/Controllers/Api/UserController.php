@@ -69,17 +69,27 @@ class UserController extends BaseController
     {
             try {
                 $user = User::findOrFail($id);
-                $name = time()."meowProfileImage$id.png";
-                $filePath = "users/$id/profile/$name";
-                $success = Storage::disk('s3')->put($filePath, file_get_contents("data:image/png;base64,$request->url_image"), 'public');
-                if ($success) {
-                    $url_image  = Storage::disk('s3')->url($filePath);
-                    $user->photo_url = $url_image;
-                    $user->save();
-                    return $this->sendResponse($url_image);
+                if(!empty($request->url_image)){
+                    $name = time()."meowProfileImage$id.png";
+                    $filePath = "users/$id/profile/$name";
+                    $success = Storage::disk('s3')->put($filePath, file_get_contents("data:image/png;base64,$request->url_image"), 'public');
+                    if ($success) {
+                        $url_image  = Storage::disk('s3')->url($filePath);
+                        $user->photo_url = $url_image;
+                        $user->name = $request->name;
+                        $user->email = $request->email;
+                        $user->save();
+                        return $this->sendResponse($url_image);
+                    } else {
+                        return $this->sendError('Erro ao Enviar Imagem', 400);
+                    }
                 } else {
-                    return $this->sendError('Erro ao Enviar Imagem', 400);
+                        $user->name = $request->name;
+                        $user->email = $request->email;
+                        $user->save();
+                        return $this->sendResponse('Perfil Alterado!');
                 }
+
 
             } catch(ModelNotFoundException){
                 return $this->sendError('Usuário não encontrado', 400);
