@@ -29,6 +29,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('avaliation', [StarController::class, 'avaliation']);
     Route::get('user/{id}', [UserController::class, 'show']);
     Route::post('user/{id}', [UserController::class, 'edit']);
+    Route::post('user/password/{id}', [UserController::class, 'ChangePassword']);
     //Route::get('foods/{company}', [FoodController::class, 'getFoodsByCompany']);
 });
 

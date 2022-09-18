@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
 class UserController extends BaseController
@@ -114,8 +115,17 @@ class UserController extends BaseController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function ChangePassword(Request $request, $id)
     {
-        //
+        try {
+
+            $user = User::findOrFail($id);
+            $user->password = Hash::make($request->password);
+            $user->save();
+            return $this->sendResponse('Senha Alterada!');
+
+        } catch (ModelNotFoundException){
+            return $this->sendError('Usuário não encontrado', 400);
+        }
     }
 }
